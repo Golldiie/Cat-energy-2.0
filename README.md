@@ -1,6 +1,6 @@
 # Личный проект «Cat Energy»
 
-* Студент: {Злата}(https://htmlacademy.ru/profile/id2688611).
+* Студент: [Злата](https://htmlacademy.ru/profile/id2688611).
 
 ---
 
