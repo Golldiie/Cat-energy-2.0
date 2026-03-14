@@ -1,4 +1,4 @@
-# Личный проект «{{projectTitle}}»
+# Личный проект «{{Cat Energy}}»
 
 * Студент: [{{Злата}}]({{https://htmlacademy.ru/profile/id2688611}}).
 
