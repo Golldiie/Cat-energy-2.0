@@ -14,9 +14,13 @@
     <nav class="main-nav">
       <ul class="main-nav__list user-list">
         <li class="user-list__item">
-          <a class="main-header__logo" href="index.html">
-            <img class="main-header__image" src="#" alt="Логотип Кэт Энерджи" width="30" height="30">
-            <div class="main-header__site-name site-name">
+          <a class="logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="icons/sprite.svg#logo-desktop" type="image/svg+xml" width="70" height="59">
+              <source media="(min-width: 768px)" srcset="icons/sprite.svg#logo-tablet" type="image/svg+xml" width="60" height="50">
+              <img src="icons/sprite.svg#logo-mobile" alt="" width="33" height="38">
+            </picture>
+            <div class="logo__name site-name">
               <span class="site-name__first-letter">Cat</span>
               Energy
             </div>
@@ -24,7 +28,7 @@
         </li>
       </ul>
       <div class="main-nav__wrapper">
-        <button class="main-nav__toggle" type="button">
+        <button class="main-nav__toggle button-burger" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <ul class="main-nav__list site-list">
