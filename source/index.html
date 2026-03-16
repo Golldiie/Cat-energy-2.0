@@ -16,9 +16,9 @@
         <li class="user-list__item">
           <a class="logo" href="index.html">
             <picture>
-              <source media="(min-width: 1200px)" srcset="icons/sprite.svg#logo-desktop" type="image/svg+xml" width="70" height="59">
-              <source media="(min-width: 768px)" srcset="icons/sprite.svg#logo-tablet" type="image/svg+xml" width="60" height="50">
-              <img src="icons/sprite.svg#logo-mobile" alt="" width="33" height="38">
+              <source media="(min-width: 1200px)" srcset="images/logo-desktop.svg" type="image/svg+xml" width="70" height="59">
+              <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/svg+xml" width="60" height="50">
+              <img src="images/logo-mobile.svg" alt="" width="33" height="38">
             </picture>
             <div class="logo__name site-name">
               <span class="site-name__first-letter">Cat</span>
@@ -96,8 +96,14 @@
       </dl>
       <p class="example__price">Затраты на питание: 15 000 РУБ.</p>
       <div class="example__slider">
-        <img class="example__picture example__picture--before" src="#" alt="Кот Борис до диеты." width="280" height="256">
-        <img class="example__picture example__picture--after" src="#" alt="Кот Борис после диеты" width="280" height="256">
+        <picture>
+          <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/cat-before-tablet@1x.png 1x, images/cat-before-tablet@2x.png 2x">
+          <img src="images/cat-before-mobile@1x.png" srcset="images/cat-before-mobile@2x.png 2x" alt="Кот Борис до диеты" width="280" height="256">
+        </picture>
+        <picture>
+          <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/cat-after-tablet@1x.png 1x, images/cat-after-tablet@2x.png 2x">
+          <img src="images/cat-after-mobile@1x.png" srcset="images/cat-after-mobile@2x.png 2x" alt="Кот Борис после диеты" width="280" height="256">
+        </picture>
       </div>
     </section>
   </main>
