@@ -1,0 +1,23 @@
+.site-name {
+  font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $dark-color;
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+    line-height: 21px;
+  }
+}
+
+.site-name__first-letter {
+  font-weight: 700;
+  color: $dark-color;
+}
+
+.site-name--light {
+  @media (min-width: $tablet-width) {
+    color: $dark-grey;
+  }
+}

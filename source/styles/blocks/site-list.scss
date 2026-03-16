@@ -1,0 +1,16 @@
+.site-list {
+  color: #000000;
+
+  @media (min-width: $desktop-width) {
+    color: $light-color;
+  }
+}
+
+.site-list--inner {
+  color: #000000;
+}
+
+.site-list__link {
+  text-decoration: none;
+  color: inherit;
+}
