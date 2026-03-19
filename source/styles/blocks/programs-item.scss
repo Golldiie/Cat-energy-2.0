@@ -39,4 +39,36 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  &:hover {
+    opacity: 0.6;
+  }
+}
+
+.programs-item--slim {
+  background-image: url("../../icons/cat-slim.svg");
+  background-repeat: no-repeat;
+  background-size: 50px 53px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 200px 211px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 100px 106px;
+  }
+}
+
+.programs-item--pro {
+  background-image: url("../../icons/cat-pro.svg");
+  background-repeat: no-repeat;
+  background-size: 67px 50px;
+
+  @media (min-width: $tablet-width) {
+    background-size: 268px 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-size: 134px 100px;
+  }
 }
