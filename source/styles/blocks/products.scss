@@ -3,15 +3,3 @@
   padding: 0;
   list-style: none;
 }
-
-.products__list li:last-child {
-  background: url("../../icons/plus.svg") no-repeat center 25px / 30px 30px;
-
-  @media (min-width: 768px) {
-    background: url("../../icons/plus.svg") no-repeat center 50px / 60px 60px;
-  }
-
-  @media (min-width: 1200px) {
-    background: url("../../icons/plus.svg") no-repeat center 40px / 60px 60px;
-  }
-}

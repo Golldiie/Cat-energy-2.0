@@ -9,6 +9,14 @@
     font-size: 21px;
     line-height: 21px;
   }
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .site-name__first-letter {
