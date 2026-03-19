@@ -14,46 +14,46 @@
 </head>
 
 <body class="page__body">
-  <header class="main-header">
-    <nav class="main-nav">
-      <ul class="main-nav__list user-list">
-        <li class="user-list__item">
-          <a class="logo" href="index.html">
-            <picture>
-              <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" type="image/svg+xml" width="70" height="59">
-              <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/svg+xml" width="60" height="50">
-              <img src="images/logo-mobile.svg" alt="" width="33" height="38">
-            </picture>
-            <div class="logo__name site-name site-name--light">
-              <span class="site-name__first-letter">Cat</span>
-              Energy
-            </div>
-          </a>
-        </li>
-      </ul>
-      <div class="main-nav__wrapper">
-        <button class="main-nav__toggle button-burger" type="button" aria-label="Открыть меню">
-          <svg width="24" height="24" aria-hidden="true" focusable="false">
-            <use href="icons/stack.svg#button-burger"></use>
-            <use href="icons/stack.svg#button-close"></use>
-          </svg>
-        </button>
-        <ul class="main-nav__list site-list site-list--inner">
+  <header class="inner-header">
+    <div class="inner-header__wrapper">
+      <a class="inner-header__logo logo" href="index.html" alt="Cat Energy — на главную">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" type="image/svg+xml" width="70" height="59">
+          <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/svg+xml" width="60" height="50">
+          <img class="logo__pic" src="images/logo-mobile.svg" alt="" width="33" height="38">
+        </picture>
+        <span class="logo__name site-name">
+          <span class="site-name__first-letter">Cat</span>
+          Energy
+        </span>
+      </a>
+      <button class="page-header__navigation-toggle page-nav__navigation-toggle--open" type="button" aria-controls="main-nav" aria-expanded="false" aria-label="Открыть меню">
+        <svg class="page-header__navigation-icon page-header__navigation-icon--burger" width="24" height="24">
+          <use href="icons/stack.svg#button-burger"></use>
+        </svg>
+
+        <svg class="page-header__navigation-icon page-header__navigation-icon--close" width="24" height="24">
+          <use href="icons/stack.svg#button-close"></use>
+        </svg>
+      </button>
+      <nav class="page-nav page-nav--open">
+        <ul class="page-nav__list">
           <li class="site-list__item">
-            <a class="site-list__link site-list__link--current" href="index.html">Главная</a>
+            <a class="site-list__link site-list__link--inner" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+            <a class="site-list__link site-list__link--inner" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__link" href="form.html">Подбор программы</a>
+            <a class="site-list__link site-list__link--inner-current" href="catalog.html">Каталог продукции</a>
           </li>
         </ul>
-      </div>
-    </nav>
+      </nav>
+    </div>
   </header>
-  <main class="main-container">
-    <h1 class="main-container__title title">Каталог продукции</h1>
+
+  <main class="page-container">
+    <h1 class="page-container__title title">Каталог продукции</h1>
     <section class="products">
       <h2 class="visually-hidden">Список товаров</h2>
       <ul class="products__list">
@@ -231,7 +231,7 @@
       </form>
     </section>
   </main>
-  <footer class="main-footer">
+  <footer class="page-footer">
     <section class="cooperation">
       <h2 class="visually-hidden">Сотрудничество</h2>
       <div class="cooperation-wrapper">

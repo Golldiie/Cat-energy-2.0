@@ -7,9 +7,9 @@
 
 
 /* BLOCKS */
-@import "./blocks/main-header.scss";
-@import "./blocks/main-nav.scss";
-@import "./blocks/user-list.scss";
+@import "./blocks/page-header.scss";
+@import "./blocks/inner-header.scss";
+@import "./blocks/page-nav.scss";
 @import "./blocks/logo.scss";
 @import "./blocks/site-name.scss";
 @import "./blocks/button-burger.scss";
@@ -36,6 +36,6 @@
 @import "./blocks/input-email.scss";
 
 /* FOOTER */
-@import "./blocks/main-footer.scss";
+@import "./blocks/page-footer.scss";
 @import "./blocks/cooperation.scss";
 @import "./blocks/contacts.scss";
