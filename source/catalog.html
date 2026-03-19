@@ -177,45 +177,47 @@
       </ul>
     </section>
     <section class="addition-products">
-      <h2 class="addition-products__title title">Дополнительные товары</h2>
-      <ul class="addition-products__list">
-        <li class="addition-products__item addition-item">
-          <h3 class="addition-item__name product-name">Сахарозаменитель</h3>
-          <dl class="addition-item__addition-description addition-description">
-            <dt class="addition-description__name">1 упаковка (100 г)</dt>
-            <dd class="addition-description__value">200 ₽</dd>
-          </dl>
-          <button class="addition-item__button button button--primary" type="button">Заказать</button>
-        </li>
-        <li class="addition-products__item addition-item">
-          <h3 class="addition-item__name product-name">Питьевая вода</h3>
-          <dl class="addition-item__addition-description addition-description">
-            <dt class="addition-description__name">5 литров</dt>
-            <dd class="addition-description__value">50 ₽</dd>
-          </dl>
-          <button class="addition-item__button button button--primary" type="button">Заказать</button>
-        </li>
-        <li class="addition-products__item addition-item">
-          <h3 class="addition-item__name product-name">Молоко</h3>
-          <dl class="addition-item__addition-description addition-description">
-            <dt class="addition-description__name">1 литр</dt>
-            <dd class="addition-description__value">100 ₽</dd>
-          </dl>
-          <button class="addition-item__button button button--primary" type="button">Заказать</button>
-        </li>
-        <li class="addition-products__item addition-item">
-          <h3 class="addition-item__name product-name">Витамины</h3>
-          <dl class="addition-item__addition-description addition-description">
-            <dt class="addition-description__name">1 упаковка (30 г)</dt>
-            <dd class="addition-description__value">300 ₽</dd>
-          </dl>
-          <button class="addition-item__button button button--primary" type="button">Заказать</button>
-        </li>
-      </ul>
-    </section>
-    <section class="special">
-      <h2 class="visually-hidden">Специально для вас!</h2>
-      <p class="special__description">Закажите все и получите чехол для кота в подарок!</p>
+      <div class="addition-products__wrapper">
+        <h2 class="addition-products__title title">Дополнительные товары</h2>
+        <ul class="addition-products__list">
+          <li class="addition-products__item addition-item">
+            <h3 class="addition-item__name product-name">Сахарозаменитель</h3>
+            <dl class="addition-item__addition-description addition-description">
+              <dt class="addition-description__name">1 упаковка (100 г)</dt>
+              <dd class="addition-description__value">200 ₽</dd>
+            </dl>
+            <button class="addition-item__button button button--primary" type="button">Заказать</button>
+          </li>
+          <li class="addition-products__item addition-item">
+            <h3 class="addition-item__name product-name">Питьевая вода</h3>
+            <dl class="addition-item__addition-description addition-description">
+              <dt class="addition-description__name">5 литров</dt>
+              <dd class="addition-description__value">50 ₽</dd>
+            </dl>
+            <button class="addition-item__button button button--primary" type="button">Заказать</button>
+          </li>
+          <li class="addition-products__item addition-item">
+            <h3 class="addition-item__name product-name">Молоко</h3>
+            <dl class="addition-item__addition-description addition-description">
+              <dt class="addition-description__name">1 литр</dt>
+              <dd class="addition-description__value">100 ₽</dd>
+            </dl>
+            <button class="addition-item__button button button--primary" type="button">Заказать</button>
+          </li>
+          <li class="addition-products__item addition-item">
+            <h3 class="addition-item__name product-name">Витамины</h3>
+            <dl class="addition-item__addition-description addition-description">
+              <dt class="addition-description__name">1 упаковка (30 г)</dt>
+              <dd class="addition-description__value">300 ₽</dd>
+            </dl>
+            <button class="addition-item__button button button--primary" type="button">Заказать</button>
+          </li>
+        </ul>
+        <div class="special">
+          <h2 class="visually-hidden">Специально для вас!</h2>
+          <p class="special__description">Закажите все и получите чехол для кота в подарок!</p>
+        </div>
+      </div>
     </section>
     <section class="sales">
       <h2 class="sales__title title">Акции и новинки</h2>
@@ -231,13 +233,16 @@
       <h2 class="visually-hidden">Сотрудничество</h2>
       <div class="cooperation-wrapper">
         <p class="cooperation__title">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <div class="cooperation__address">
+          <p>ул. Большая Конюшенная, д. 19/8</p>
+          <p>Санкт-Петербург</p>
+        </div>
       </div>
-      <img class="cooperation__location" src="images/location.png" alt="Местонахождение офиса Кэт Энерджи." width="320" height="362">
+      <img class="cooperation__location" src="#" alt="Местонахождение офиса Кэт Энерджи." width="320" height="362">
     </section>
     <section class="contacts">
       <h2 class="visually-hidden">Связаться с нами</h2>
-      <a class="contacts-title" href="index.html">
+      <a class="logo" href="index.html">
         <div class="contacts__site-name site-name">
           <span class="site-name__first-letter">Cat</span>
           Energy
@@ -268,24 +273,23 @@
             <span class="visually-hidden">Телеграм</span>
           </a>
         </li>
-        <li class="contacts__item">
-          <a class="contacts__link" href="https://htmlacademy.ru/profile/id2688611">
-            <p class="contacts__name">HTML Academy</p>
-            <svg class="contacts__icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="27" height="34" fill="none" viewBox="0 0 27 34">
-              <g clip-path="url(#a)">
-                <path fill="#666" d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z" />
-              </g>
-              <defs>
-                <clippath id="a">
-                  <path fill="#fff" d="M0 0h27v34H0z" />
-                </clippath>
-              </defs>
-            </svg>
-          </a>
-        </li>
       </ul>
+      <a class="contacts__link" href="https://htmlacademy.ru/profile/id2688611">
+        <p class="contacts__name">HTML Academy</p>
+        <svg class="contacts__icon" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="27" height="34" fill="none" viewBox="0 0 27 34">
+          <g clip-path="url(#a)">
+            <path fill="#666" d="M13.643.016 13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016Zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256Zm0-11.564-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834Zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237Z" />
+          </g>
+          <defs>
+            <clippath id="a">
+              <path fill="#fff" d="M0 0h27v34H0z" />
+            </clippath>
+          </defs>
+        </svg>
+      </a>
     </section>
   </footer>
+
 </body>
 
 </html>
