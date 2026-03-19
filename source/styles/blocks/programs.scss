@@ -1,0 +1,19 @@
+.programs__slogan {
+  font-family: "Oswald", sans-serif;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+.programs__list {
+  margin: 0;
+  padding: 0;
+  list-style: 0;
+}
