@@ -32,8 +32,11 @@
         </li>
       </ul>
       <div class="main-nav__wrapper">
-        <button class="main-nav__toggle button-burger" type="button">
-          <span class="visually-hidden">Открыть меню</span>
+        <button class="main-nav__toggle button-burger" type="button" aria-label="Открыть меню">
+          <svg width="24" height="24" aria-hidden="true" focusable="false">
+            <use href="icons/stack.svg#button-burger"></use>
+            <use href="icons/stack.svg#button-close"></use>
+          </svg>
         </button>
         <ul class="main-nav__list site-list site-list--inner">
           <li class="site-list__item">
