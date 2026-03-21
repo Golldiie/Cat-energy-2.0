@@ -1,5 +1,23 @@
 .products__list {
-  margin: 0;
-  padding: 0;
   list-style: none;
+  margin: 0;
+  padding: 41px 0 26px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-bottom: 45px;
+    margin: 170px auto 0;
+    width: 708px;
+    display: grid;
+    grid-template-columns: repeat(2, 324px);
+    justify-content: space-between;
+    row-gap: 120px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 184px auto 0;
+    padding-bottom: 71px;
+    grid-template-columns: repeat(4, 245px);
+  }
 }
