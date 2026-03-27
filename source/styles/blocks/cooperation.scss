@@ -1,21 +1,55 @@
+.cooperation__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  display: flex;
+  padding: 26px 0;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 628px;
+    padding: 60px 0;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 565px;
+    justify-content: space-evenly;
+  }
+}
+
 .cooperation__title {
+  margin: 0;
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+  width: 140px;
 
   @media (min-width: $tablet-width) {
+    width: 164px;
     font-size: 20px;
     line-height: 26px;
   }
 }
 
 .cooperation__address {
+  margin: 0;
   font-size: 14px;
   line-height: 20px;
+  color: $dark-grey;
+  width: 140px;
+
+  & > * {
+    margin: 0;
+  }
 
   @media (min-width: $tablet-width) {
+    width: 157px;
     font-size: 16px;
     line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
   }
 }
+
