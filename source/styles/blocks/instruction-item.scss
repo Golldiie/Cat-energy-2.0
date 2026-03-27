@@ -1,0 +1,29 @@
+.instruction-item__description {
+  margin: 0;
+  width: 200px;
+  font-size: 14px;
+  line-height: 18px;
+  color: $dark-grey;
+
+  @media (min-width: $tablet-width) {
+    width: 245px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.instruction-item--health::before {
+  background: $accent-color url("../../icons/icon-leaf.svg") no-repeat center / 30px 32px;
+}
+
+.instruction-item--speed::before {
+  background: $accent-color url("../../icons/icon-powder.svg") no-repeat center / 30px 32px;
+}
+
+.instruction-item--eat::before {
+  background: $accent-color url("../../icons/icon-eat.svg") no-repeat center / 30px 32px;
+}
+
+.instruction-item--result::before {
+  background: $accent-color url("../../icons/icon-time.svg") no-repeat center / 30px 32px;
+}
