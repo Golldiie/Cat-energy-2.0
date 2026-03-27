@@ -53,3 +53,10 @@
   }
 }
 
+.cooperation--inner {
+  background-color: $basic-grey;
+
+  @media (min-width: $desktop-width) {
+    background-color: $light-color;
+  }
+}
