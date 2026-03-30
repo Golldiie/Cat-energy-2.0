@@ -1,7 +1,44 @@
+.subscribe-form__action {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+.subscribe-form__input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    gap: 0;
+    justify-content: center;
+  }
+}
+
 .subscribe-form__input {
   font-family: "Oswald", sans-serif;
   font-size: 20px;
-  line-height: 20px;
   font-weight: 400;
+  line-height: 20px;
   text-transform: uppercase;
+  padding: 13px;
+  border: 1px solid #cdcdcd;
+  color: $dark-grey;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 2;
+  }
+}
+
+.subscribe-form__button {
+  font-size: 20px;
+  line-height: 26px;
+  flex-grow: 1;
 }

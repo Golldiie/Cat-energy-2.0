@@ -1,19 +1,62 @@
-.programs__slogan {
-  font-family: "Oswald", sans-serif;
-  font-size: 14px;
-  line-height: 14px;
-  text-transform: uppercase;
-  text-align: center;
-  margin: 0;
+.programs {
+  width: 280px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
-    font-size: 20px;
-    line-height: 20px;
+    width: 709px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
   }
 }
 
 .programs__list {
+  padding: 20px 0;
   margin: 0;
-  padding: 0;
-  list-style: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-bottom: 45px;
+    gap: 30px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 82px 0 71px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.programs-item {
+  background-color: $basic-grey;
+  box-sizing: border-box;
+  list-style: none;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  grid-template-areas:
+    "icon        title       title"
+    "description description description"
+    "button      button      button";
+
+  @media (min-width: $tablet-width) {
+    grid-template-areas:
+      "title       icon"
+      "description icon"
+      "button      icon";
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    width: 570px;
+    grid-template-areas:
+      "icon        title"
+      "description description"
+      "button      button";
+  }
 }

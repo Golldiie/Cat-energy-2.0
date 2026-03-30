@@ -1,0 +1,187 @@
+.hero__wrapper {
+  width: 320px;
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 270px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 720px;
+    grid-template-rows: 172px auto auto 58px;
+    row-gap: 52px;
+    align-items: center;
+    margin: 0;
+  }
+}
+
+.hero__background {
+  grid-row: 1;
+  position: absolute;
+  z-index: 0;
+  width: 320px;
+  height: 302px;
+  background:
+    linear-gradient(rgba(104, 183, 56, 0.85),
+    rgba(104, 183, 56, 0.85)),
+    url("../../images/index-background-mobile@1x.jpg") no-repeat 67%/ cover;
+
+  @media (min-resolution: 2dppx) {
+    background:
+      linear-gradient(rgba(104, 183, 56, 0.85),
+      rgba(104, 183, 56, 0.85)),
+      url("../../images/index-background-mobile@2x.jpg") no-repeat 67% / cover;
+  }
+
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: block;
+    width: 720px;
+    height: 100%;
+    grid-column: 2;
+    grid-row: 1 / span 4;
+    background:
+      linear-gradient(rgba(104, 183, 56, 0.85),
+      rgba(104, 183, 56, 0.85)),
+      url("../../images/index-background-desktop@1x.jpg") no-repeat left/ cover;
+
+    @media (min-resolution: 2dppx) {
+      background:
+        linear-gradient(rgba(104, 183, 56, 0.85),
+        rgba(104, 183, 56, 0.85)),
+        url("../../images/index-background-desktop@2x.jpg") no-repeat left/ cover;
+    }
+  }
+}
+
+.hero__content {
+  width: 100%;
+  font-family: "Oswald", sans-serif;
+  color: #ffffff;
+  grid-row: 1;
+  padding: 30px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-bottom: 20px;
+    align-items: start;
+    gap: 40px;
+    color: #000000;
+    position: relative;
+    z-index: 2;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 2;
+    padding: 0;
+    position: static;
+  }
+}
+
+.hero__title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  position: relative;
+  z-index: 2;
+  margin: 0;
+  text-align: center;
+  width: 250px;
+
+  @media (min-width: $tablet-width) {
+    width: 430px;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+    transform: translateX(90px);
+  }
+}
+
+.hero__slogan {
+  margin: 0;
+  width: 198px;
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 430px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    transform: translateX(90px);
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.hero__pic {
+  display: block;
+  position: relative;
+  z-index: 2;
+  justify-self: center;
+
+  @media (min-width: $tablet-width) {
+    width: 709px;
+    height: 609px;
+    position: static;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 552px;
+    height: 499px;
+    position: absolute;
+    top: 22%;
+    right: 23%;
+    z-index: 1;
+  }
+}
+
+.hero__button {
+  grid-row: 3;
+  position: relative;
+  z-index: 2;
+  margin: 0 20px;
+  justify-self: stretch;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    font-size: 20px;
+    line-height: 26px;
+    min-width: 242px;
+    box-sizing: border-box;
+    padding: 14px;
+    position: absolute;
+    top: 230px;
+    transform: translateX(90px);
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-row: 3;
+    grid-column: 1;
+    place-self: start start;
+    position: static;
+  }
+}
