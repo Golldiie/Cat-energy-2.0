@@ -1,5 +1,70 @@
+.sales__wrapper {
+  margin: 0;
+  padding: 40px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 80px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    padding-bottom: 96px;
+  }
+}
+
+.sales__title {
+  margin: 0;
+  margin-left: 20px;
+  font-size: 24px;
+  line-height: 24px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+    margin: 0;
+  }
+
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      display: block;
+      height: 2px;
+      flex-grow: 1;
+      background-color: $accent-color;
+    }
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    height: 2px;
+    flex-grow: 12;
+    background-color: $accent-color;
+  }
+}
+
 .sales__subscribe {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
   line-height: 20px;
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 632px;
+    padding-top: 66px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 752px;
+    padding-top: 72px;
+  }
 }

@@ -1,9 +1,37 @@
+.addition-item__name {
+  margin: 0;
+
+  @media (min-width: $tablet-width) {
+    flex-grow: 1;
+  }
+}
+
 .addition-item__addition-description {
+  display: flex;
+  justify-content: space-between;
   font-size: 14px;
   line-height: 14px;
 
   @media (min-width: $tablet-width) {
+    width: 231px;
     font-size: 16px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 285px;
+  }
 }
+
+.addition-item__description-value {
+  margin: 0;
+}
+
+.addition-item__button {
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+  }
+}
+

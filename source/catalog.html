@@ -223,56 +223,60 @@
     </section>
 
     <section class="addition-products">
+      <h2 class="addition-products__title title title--small">Дополнительные товары</h2>
       <div class="addition-products__wrapper">
-        <h2 class="addition-products__title title title--small">Дополнительные товары</h2>
         <ul class="addition-products__list">
           <li class="addition-products__item addition-item">
             <h3 class="addition-item__name product-name">Сахарозаменитель</h3>
-            <dl class="addition-item__addition-description addition-description">
-              <dt class="addition-description__name">1 упаковка (100 г)</dt>
-              <dd class="addition-description__value">200 ₽</dd>
+            <dl class="addition-item__addition-description">
+              <dt class="addition-item__description-name">1 упаковка (100 г)</dt>
+              <dd class="addition-item__description-value">200 ₽</dd>
             </dl>
             <button class="addition-item__button button button--primary" type="button">Заказать</button>
           </li>
           <li class="addition-products__item addition-item">
             <h3 class="addition-item__name product-name">Питьевая вода</h3>
-            <dl class="addition-item__addition-description addition-description">
-              <dt class="addition-description__name">5 литров</dt>
-              <dd class="addition-description__value">50 ₽</dd>
+            <dl class="addition-item__addition-description">
+              <dt class="addition-item__description-name">5 литров</dt>
+              <dd class="addition-item__description-value">50 ₽</dd>
             </dl>
             <button class="addition-item__button button button--primary" type="button">Заказать</button>
           </li>
           <li class="addition-products__item addition-item">
             <h3 class="addition-item__name product-name">Молоко</h3>
-            <dl class="addition-item__addition-description addition-description">
-              <dt class="addition-description__name">1 литр</dt>
-              <dd class="addition-description__value">100 ₽</dd>
+            <dl class="addition-item__addition-description">
+              <dt class="addition-item__description-name">1 литр</dt>
+              <dd class="addition-item__description-value">100 ₽</dd>
             </dl>
             <button class="addition-item__button button button--primary" type="button">Заказать</button>
           </li>
           <li class="addition-products__item addition-item">
             <h3 class="addition-item__name product-name">Витамины</h3>
-            <dl class="addition-item__addition-description addition-description">
-              <dt class="addition-description__name">1 упаковка (30 г)</dt>
-              <dd class="addition-description__value">300 ₽</dd>
+            <dl class="addition-item__addition-description">
+              <dt class="addition-item__description-name">1 упаковка (30 г)</dt>
+              <dd class="addition-item__description-value">300 ₽</dd>
             </dl>
             <button class="addition-item__button button button--primary" type="button">Заказать</button>
           </li>
         </ul>
         <div class="addition-products__special special">
-          <h2 class="visually-hidden">Специально для вас!</h2>
-          <p class="special__description">Закажите все и получите чехол для кота в подарок!</p>
+          <div class="special__wrapper">
+            <h2 class="visually-hidden">Специально для вас!</h2>
+            <p class="special__description">Закажите все и получите чехол для кота в подарок!</p>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="sales">
       <h2 class="sales__title title title--small">Акции и новинки</h2>
-      <form class="sales__subscribe subscribe-form" action="https://echo.htmlacademy.ru" method="post">
-        <label class="subscribe-form__action" for="subscription">Подпишитесь на наши новости и не пропустите ни одного предложения!</label>
-        <input class="subscribe-form__input input-email" id="subscription" name="email" placeholder="кuklachev@gmail.com">
-        <button class="subscribe-form__button button button--primary" type="submit">Подписаться</button>
-      </form>
+      <div class="sales__wrapper">
+        <form class="sales__subscribe subscribe-form" action="https://echo.htmlacademy.ru" method="post">
+          <label class="subscribe-form__action" for="subscription">Подпишитесь на наши новости и не пропустите ни одного предложения!</label>
+          <input class="subscribe-form__input input-email" id="subscription" name="email" placeholder="кuklachev@gmail.com">
+          <button class="subscribe-form__button button button--primary" type="submit">Подписаться</button>
+        </form>
+      </div>
     </section>
   </main>
 
