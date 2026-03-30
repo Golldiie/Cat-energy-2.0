@@ -1,0 +1,59 @@
+.last-item__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+  justify-content: space-between;
+  gap: 22px;
+  min-height: 100%;
+
+  &::before {
+    align-self: center;
+    box-sizing: border-box;
+    display: block;
+    content: "";
+    width: 30px;
+    height: 30px;
+    background-image: url("../../icons/icon-plus.svg");
+
+    @media (min-width: $tablet-width) {
+      padding: 0;
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    gap: 0;
+    padding: 0;
+    width: 250px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0;
+    width: 169px;
+  }
+}
+
+.last-item__content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    gap: 23px;
+  }
+}
+
+.last-item__name {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.last-item__description {
+  width: 100%;
+  text-align: center;
+}

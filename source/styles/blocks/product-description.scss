@@ -1,3 +1,20 @@
 .product-description {
   margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  color: $dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.product-description__value {
+  text-align: end;
+}
+
+.product-description--last {
+  width: 220px;
+  text-align: center;
 }

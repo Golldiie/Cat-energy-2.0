@@ -9,13 +9,12 @@
 
   @media (min-width: $tablet-width) {
     width: 709px;
-    padding: 25px 0;
+    padding: 25px 0 65px;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    padding: 0;
-    padding-top: 55px;
+    padding: 55px 0 74px;
     margin: 0 auto;
   }
 }
