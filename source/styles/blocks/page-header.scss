@@ -28,13 +28,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 190px;
+  width: 191px;
   text-decoration: none;
   padding-left: 20px;
   position: relative;
 
   @media (min-width: $tablet-width) {
-    width: 155px;
+    width: 176px;
     padding: 0;
     gap: 13px;
   }

@@ -28,7 +28,7 @@
 
 .instruction__title {
   font-size: 36px;
-  line-height: 40px;
+  line-height: 26px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -43,7 +43,7 @@
 }
 
 .instruction__list {
-  padding: 40px 0 50px;
+  padding: 45px 0 50px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, 280px);
@@ -67,6 +67,7 @@
 .instruction__item {
   list-style: none;
   display: flex;
+  align-items: center;
   gap: 20px;
   position: relative;
   counter-increment: instruction;

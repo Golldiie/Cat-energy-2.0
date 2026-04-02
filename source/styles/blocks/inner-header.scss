@@ -20,7 +20,7 @@
 }
 
 .inner-header__logo {
-  width: 190px;
+  width: 191px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -28,7 +28,7 @@
   padding-left: 20px;
 
   @media (min-width: $tablet-width) {
-    width: 155px;
+    width: 176px;
     padding: 0;
     gap: 13px;
   }
