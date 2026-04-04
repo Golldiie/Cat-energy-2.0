@@ -6,7 +6,7 @@
   color: $dark-grey;
 
   @media (min-width: $tablet-width) {
-    width: 245px;
+    width: 100%;
     font-size: 16px;
     line-height: 24px;
   }
@@ -16,14 +16,40 @@
   background: $accent-color url("../../icons/icon-leaf.svg") no-repeat center / 30px 32px;
 }
 
-.instruction-item--speed::before {
-  background: $accent-color url("../../icons/icon-powder.svg") no-repeat center / 30px 32px;
+.instruction-item--speed {
+  &::before {
+    background: $accent-color url("../../icons/icon-powder.svg") no-repeat center / 30px 32px;
+  }
+
+  &::after {
+    justify-self: end;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 246px;
+  }
 }
 
 .instruction-item--eat::before {
   background: $accent-color url("../../icons/icon-eat.svg") no-repeat center / 30px 32px;
 }
 
-.instruction-item--result::before {
-  background: $accent-color url("../../icons/icon-time.svg") no-repeat center / 30px 32px;
+.instruction-item--result {
+  & > .instruction-item__description > br {
+    display: none;
+
+    @media (min-width: $tablet-width) {
+      display: block;
+    }
+  }
+
+  &::before {
+    background: $accent-color url("../../icons/icon-time.svg") no-repeat center / 30px 32px;
+  }
+
+  @media (min-width: $tablet-width) {
+    & > .instruction-item__description {
+      width: 245px;
+    }
+  }
 }

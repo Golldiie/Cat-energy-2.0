@@ -11,7 +11,7 @@
     justify-content: space-between;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     width: 565px;
     justify-content: space-evenly;
   }
@@ -50,12 +50,17 @@
     display: flex;
     flex-direction: column;
     gap: 19px;
+    text-align: end;
   }
 }
 
 .cooperation iframe {
   width: 100%;
   display: block;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
+  }
 }
 
 .cooperation--inner {
