@@ -4,12 +4,22 @@
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    background: linear-gradient(0deg, rgba(234, 234, 234, 1) 0%, rgba(234, 234, 234, 1) 41.8%, rgba(255, 255, 255, 1) 41.8%, rgba(255, 255, 255, 1) 100%);
+    background:
+      linear-gradient(0deg,
+      rgba(234, 234, 234, 1) 0%,
+      rgba(234, 234, 234, 1) 41.8%,
+      rgba(255, 255, 255, 1) 41.8%,
+      rgba(255, 255, 255, 1) 100%);
   }
 
   @media (min-width: $desktop-width) {
     min-height: 598px;
-    background: linear-gradient(0deg, rgba(234, 234, 234, 1) 0%, rgba(234, 234, 234, 1) 69%, rgba(255, 255, 255, 1) 69%, rgba(255, 255, 255, 1) 100%);
+    background:
+      linear-gradient(0deg,
+      rgba(234, 234, 234, 1) 0%,
+      rgba(234, 234, 234, 1) 69%,
+      rgba(255, 255, 255, 1) 69%,
+      rgba(255, 255, 255, 1) 100%);
   }
 }
 
@@ -17,12 +27,12 @@
   background-color: transparent;
   width: 280px;
   margin: 0 auto;
-  padding: 45px 0 40px;
+  padding: 25px 0 40px;
 
   @media (min-width: $tablet-width) {
     width: 708px;
     margin: 0 auto;
-    padding: 45px 0 101px;
+    padding: 50px 0 101px;
   }
 
   @media (min-width: $desktop-width) {
@@ -80,13 +90,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 20px 0;
   width: 100%;
 
   @media (min-width: $tablet-width) {
     justify-content: space-between;
     align-items: center;
-    padding: 55px 0 99px;
+    padding: 40px 0 85px;
   }
 
   @media (min-width: $desktop-width) {
@@ -103,10 +112,6 @@
   display: flex;
   gap: 32px;
   min-height: 70px;
-
-  @media (min-width: $tablet-width) {
-    padding: 55px 0;
-  }
 
   @media (min-width: $desktop-width) {
     width: 100%;
@@ -128,15 +133,16 @@
 }
 
 .example__price {
-  padding: 20px 0;
   text-align: center;
   font-family: "Oswald", sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #000000;
   text-transform: uppercase;
+  padding-bottom: 20px;
 
   @media (min-width: $tablet-width) {
+    padding: 0;
     text-align: right;
     width: 174px;
     font-size: 20px;
@@ -163,7 +169,6 @@
   overflow: hidden;
 
   @media (min-width: $tablet-width) {
-    margin-top: 45px;
     width: 560px;
     height: 512px;
   }

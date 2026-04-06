@@ -1,3 +1,8 @@
+.cooperation {
+  position: relative;
+  z-index: 1;
+}
+
 .cooperation__wrapper {
   width: 280px;
   margin: 0 auto;
@@ -11,9 +16,15 @@
     justify-content: space-between;
   }
 
-  @media (min-width: $tablet-width) {
+  @media (min-width: $desktop-width) {
     width: 565px;
     justify-content: space-evenly;
+    position: absolute;
+    background-color: $light-color;
+    z-index: 2;
+    top: 50%;
+    left: 110px;
+    transform: translateY(-50%);
   }
 }
 
@@ -50,6 +61,20 @@
     display: flex;
     flex-direction: column;
     gap: 19px;
+    text-align: end;
+  }
+
+  @media (min-width: $tablet-width) {
+    text-align: start;
+  }
+}
+
+.cooperation iframe {
+  width: 100%;
+  display: block;
+
+  @media (min-width: $tablet-width) {
+    height: 400px;
   }
 }
 

@@ -28,12 +28,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 190px;
+  width: 191px;
   text-decoration: none;
   padding-left: 20px;
+  position: relative;
 
   @media (min-width: $tablet-width) {
-    width: 155px;
+    width: 176px;
     padding: 0;
     gap: 13px;
   }
@@ -41,25 +42,6 @@
   @media (min-width: $desktop-width) {
     width: 202px;
   }
-}
-
-.page-header__navigation-toggle {
-  padding: 0;
-  padding-right: 20px;
-  margin: 0;
-  height: 24px;
-
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
-.page-header__navigation-icon--close {
-  display: block;
-}
-
-.page-header__navigation-icon--open {
-  display: none;
 }
 
 .page-header__navigation-wrapper {

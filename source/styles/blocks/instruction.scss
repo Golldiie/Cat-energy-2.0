@@ -10,6 +10,8 @@
     @media (min-width: $tablet-width) {
       display: block;
       width: 100%;
+      position: absolute;
+      bottom: -5px;
     }
 
     @media (min-width: $desktop-width) {
@@ -19,6 +21,7 @@
 
   @media (min-width: $tablet-width) {
     width: 768px;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,7 +31,7 @@
 
 .instruction__title {
   font-size: 36px;
-  line-height: 40px;
+  line-height: 26px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
@@ -43,15 +46,17 @@
 }
 
 .instruction__list {
-  padding: 40px 0 50px;
+  padding: 45px 0 50px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(auto-fit, 280px);
   row-gap: 20px;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
-    padding: 35px 0 45px;
+    width: 665px;
+    padding: 0;
+    padding-top: 80px;
+    margin: 0 auto 0 30px;
     justify-content: space-between;
     row-gap: 37px;
     counter-reset: instruction;
@@ -59,7 +64,7 @@
 
   @media (min-width: $desktop-width) {
     width: 100%;
-    padding: 0;
+    margin: 0;
     padding-top: 75px;
   }
 }
@@ -67,6 +72,7 @@
 .instruction__item {
   list-style: none;
   display: flex;
+  align-items: center;
   gap: 20px;
   position: relative;
   counter-increment: instruction;
@@ -116,7 +122,8 @@
   @media (min-width: $tablet-width) {
     width: 230px;
     min-height: 280px;
-    flex-direction: column;
-    gap: 31px;
+    display: grid;
+    grid-template-rows: 80px 80px;
+    gap: 30px;
   }
 }
