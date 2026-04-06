@@ -68,6 +68,7 @@
   position: absolute;
   top: 50%;
   left: 50%;
+  transition: transform, rotate 1s, 1s ease-in-out;
 }
 
 .page-nav--opened .page-nav__toggle::before {
