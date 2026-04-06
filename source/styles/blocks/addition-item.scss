@@ -1,9 +1,6 @@
 .addition-item__name {
   margin: 0;
-
-  @media (min-width: $tablet-width) {
-    flex-grow: 1;
-  }
+  grid-area: name;
 }
 
 .addition-item__addition-description {
@@ -13,7 +10,12 @@
   line-height: 14px;
 
   @media (min-width: $tablet-width) {
-    width: 231px;
+    grid-area: desc;
+    display: grid;
+    grid-template-columns: max-content max-content;
+    column-gap: 50px;
+    justify-self: end;
+    align-items: center;
     font-size: 16px;
     line-height: 20px;
   }
@@ -28,9 +30,5 @@
 }
 
 .addition-item__button {
-  width: 100%;
-
-  @media (min-width: $desktop-width) {
-    width: 244px;
-  }
+  grid-area: button;
 }
