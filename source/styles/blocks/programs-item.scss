@@ -97,7 +97,7 @@
     transform-origin: left center;
   }
 
-  &:is(:hover, :focus, :focus-visible)::after {
+  &:is(:hover, :active, :focus, :focus-visible)::after {
     transform: scaleX(1.35);
   }
 
