@@ -1,5 +1,14 @@
 .site-list {
   color: #000000;
+  background-color: $light-color;
+  position: absolute;
+  z-index: 5;
+  transition: opacity 0.3s ease;
+
+  @media (min-width: $tablet-width) {
+    position: static;
+    background-color: transparent;
+  }
 
   @media (min-width: $desktop-width) {
     color: $light-color;
@@ -21,6 +30,10 @@
   padding: 23px 0;
   border-top: 1px solid #d9d9d9;
   text-align: center;
+
+  &:hover {
+    opacity: 0.6;
+  }
 
   @media (min-width: $tablet-width) {
     border: none;

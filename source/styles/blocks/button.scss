@@ -12,4 +12,20 @@
 .button--primary {
   background-color: $accent-color;
   color: $light-color;
+
+  &:is(:hover, :active, :focus) {
+    background-color: $accent-darken;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+}
+
+.button--secondary {
+  color: $dark-grey;
+
+  &:is(:hover, :active) {
+    background-color: $special-grey2;
+  }
 }

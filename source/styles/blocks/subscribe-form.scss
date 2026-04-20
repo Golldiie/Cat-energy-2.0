@@ -29,8 +29,20 @@
   line-height: 20px;
   text-transform: uppercase;
   padding: 13px;
-  border: 1px solid #cdcdcd;
+  border: 1px solid #e7e7e7;
   color: $dark-grey;
+
+  &:hover {
+    border-color: $special-grey;
+  }
+
+  &:focus {
+    border: 2px solid $dark-grey;
+  }
+
+  &:invalid {
+    border: 2px solid $error;
+  }
 
   @media (min-width: $tablet-width) {
     flex-grow: 2;

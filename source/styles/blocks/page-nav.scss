@@ -48,42 +48,46 @@
   }
 }
 
-.page-nav--closed .page-nav__toggle::before {
+.page-nav__toggle::before,
+.page-nav__toggle::after {
   content: "";
-  display: block;
+  position: absolute;
+  left: 0;
   width: 24px;
   height: 2px;
   background-color: #000000;
-  box-shadow: 0 -8px 0 0 #000000, 0 8px 0 0 #000000;
+
+  transition: transform 0.5s ease, top 0.5s ease, box-shadow 0.5s ease;
 }
 
-.page-nav--opened .page-nav__toggle::before,
-.page-nav--opened .page-nav__toggle::after {
-  content: "";
-  display: block;
-  width: 24px;
-  height: 2px;
-  background-color: #000000;
-  box-shadow: none;
-  position: absolute;
-  top: 50%;
-  left: 50%;
+.page-nav--closed .page-nav__toggle::before {
+  top: 4px;
+  box-shadow: 0 8px 0 #000000, 0 16px 0 #000000;
 }
+
+.page-nav--closed .page-nav__toggle::after {
+  opacity: 0;
+}
+
 
 .page-nav--opened .page-nav__toggle::before {
-  transform: translate(-50%, -50%) rotate(45deg);
+  top: 50%;
+  transform: translateY(-50%) rotate(45deg);
+  box-shadow: none; /* убираем лишние линии */
 }
 
 .page-nav--opened .page-nav__toggle::after {
-  transform: translate(-50%, -50%) rotate(-45deg);
+  top: 50%;
+  transform: translateY(-50%) rotate(-45deg);
+  opacity: 1;
 }
 
 @media (max-width: $mobile-width-only) {
   .page-nav--closed .site-list {
-    display: none;
+    opacity: 0;
   }
 
   .page-nav--opened .site-list {
-    display: block;
+    opacity: 1;
   }
 }
